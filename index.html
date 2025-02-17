@@ -7,49 +7,91 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
   <!-- Header Section -->
   <header>
-    <div class="logo">
-      <h1>Amish Kumar</h1>
-      <p>Web Developer | Programmer | Innovator</p>
+    <div class="container">
+      <div class="logo">
+        <h1>Amish Kumar</h1>
+        <p>Web Developer | Programmer | Innovator</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
   <!-- About Me Section -->
   <section id="about">
-    <h2>About Me</h2>
-    <p>I am a passionate computer science student with a love for coding and problem-solving...</p>
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I am a passionate computer science student with a love for coding and problem-solving. I aim to continuously improve my skills by taking on new challenges and creating impactful solutions. I believe in the power of innovation and am constantly learning to stay ahead in the tech industry.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <div class="skill">
+          <h3>Programming Languages</h3>
+          <p>C, Python, Java (Intermediate)</p>
+        </div>
+        <div class="skill">
+          <h3>Tools & Platforms</h3>
+          <p>GitHub, VS Code, LeetCode, HackerRank</p>
+        </div>
+        <div class="skill">
+          <h3>Operating Systems</h3>
+          <p>Windows, Linux</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Portfolio Section -->
   <section id="portfolio">
-    <h2>My Work</h2>
-    <div class="projects">
-      <!-- Add your project examples here -->
-      <div class="project">
-        <h3>Project 1</h3>
-        <p>Description of project...</p>
-        <a href="link-to-project">View Project</a>
+    <div class="container">
+      <h2>My Work</h2>
+      <div class="projects">
+        <div class="project">
+          <h3>OptiTask - Task & Budget Management App</h3>
+          <p>Built a productivity tool integrating task management and budget tracking. Features smart insights, streaks, calendar integration, and offline mode.</p>
+          <a href="link-to-project" target="_blank">View Project</a>
+        </div>
+        <div class="project">
+          <h3>Library Management System</h3>
+          <p>Developed a CLI-based system for book management & borrowing, featuring book search, issue/return tracking, and recommendations.</p>
+          <a href="link-to-project" target="_blank">View Project</a>
+        </div>
       </div>
-      <!-- Add more projects -->
     </div>
   </section>
 
   <!-- Contact Section -->
   <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Get in touch for inquiries or collaborations!</p>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Get in touch for inquiries or collaborations!</p>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>Find me on <a href="https://linkedin.com/in/amishkumar">LinkedIn</a> | <a href="https://github.com/amishkumar">GitHub</a></p>
+    <div class="container">
+      <p>Find me on <a href="https://www.linkedin.com/in/amishkumarofficial" target="_blank">LinkedIn</a> | <a href="https://github.com/Zero-Day-Smile" target="_blank">GitHub</a></p>
+    </div>
   </footer>
 
   <script src="js/script.js"></script>
