@@ -148,8 +148,8 @@ section {
 }
 
 .section__pic-container {
-    width: 250px;
-    height: 250px;
+    width: 180px;  /* Reduced size */
+    height: 180px;
     border-radius: 50%;
     overflow: hidden;
     margin-bottom: 1rem;
@@ -157,22 +157,23 @@ section {
 
 .section__pic-container img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
 }
 
 .title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 600;
     margin-bottom: 1rem;
 }
 
 .section__text__p1 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 
 .section__text__p2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 1rem;
     font-weight: 600;
     color: #555;
@@ -187,7 +188,8 @@ section {
 }
 
 .icon {
-    width: 40px;
+    width: 30px;  /* Reduced size */
+    height: 30px;
     cursor: pointer;
 }
 
@@ -200,9 +202,9 @@ section {
 
 .btn {
     font-weight: 600;
-    padding: 1rem;
-    width: 10rem;
-    border-radius: 30px;
+    padding: 0.8rem;
+    width: 8rem;
+    border-radius: 25px;
     text-align: center;
     border: none;
     cursor: pointer;
@@ -243,12 +245,12 @@ section {
 }
 
 .details-container {
-    padding: 1.5rem;
+    padding: 1.2rem;
     background: white;
-    border-radius: 10px;
+    border-radius: 8px;
     border: 1px solid rgb(163, 163, 163);
     text-align: center;
-    width: 300px;
+    width: 250px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -263,14 +265,15 @@ section {
 }
 
 .project-img {
-    border-radius: 10px;
+    border-radius: 8px;
     width: 100%;
     height: auto;
+    max-width: 300px; /* Adjusted size */
 }
 
 .project-title {
     margin: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
 }
 
@@ -300,21 +303,19 @@ section {
 }
 
 .contact-info-container p {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .contact-icon {
-    width: 30px;
+    width: 25px;  /* Reduced size */
+    height: 25px;
 }
 
 /* FOOTER */
 footer {
     text-align: center;
-    padding: 2rem;
+    padding: 1.5rem;
     background: black;
     color: white;
-}
-
-footer p {
-    margin: 0;
+    font-size: 0.9rem;
 }
