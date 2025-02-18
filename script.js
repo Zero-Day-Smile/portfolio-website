@@ -1,6 +1,6 @@
 // Initialize EmailJS with your user ID
 (function() {
-  emailjs.init("YOUR_USER_ID"); // Replace with your actual user ID from EmailJS
+  emailjs.init("service_ak");
 })();
 
 // Handle form submission
