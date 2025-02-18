@@ -159,8 +159,8 @@ section {
 }
 
 .icon {
-    width: 40px;  /* Set a fixed size */
-    height: 40px;
+    width: 5px;  /* Set a fixed size */
+    height: 5px;
     cursor: pointer;
     object-fit: contain;  /* Ensure proper scaling */
 }
