@@ -1,48 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Amish Kumar - Web Developer</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-  <!-- HEADER -->
-  <header>
-    <div class="container">
-      <h1>Amish Kumar</h1>
-      <p>Web Developer | Programmer | Innovator</p>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="skills.html">Skills</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="contact.html">Contact</a></li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amish Kumar - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Amish Kumar</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- ABOUT SECTION -->
-  <section id="about">
-    <div class="container">
-      <img src="images/your-photo.jpg" alt="Amish Kumar" class="profile-pic"> <!-- Add your image -->
-      <h2>About Me</h2>
-      <p>I am a passionate computer science student and aspiring web developer, committed to solving real-world problems through technology.</p>
-      <a href="portfolio.html" class="btn">View My Portfolio</a>
-      <a href="resume.html" class="btn">Download Resume</a>
-      <a href="contact.html" class="btn">Contact Me</a>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <p>Find me on <a href="https://www.linkedin.com/in/amishkumarofficial" target="_blank">LinkedIn</a> | <a href="https://github.com/Zero-Day-Smile" target="_blank">GitHub</a></p>
-    </div>
-  </footer>
-
-</body>
+      </div>
+    </nav>
+    
+    <nav id="hamburger-nav">
+      <div class="logo">Amish Kumar</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="images/your-photo.jpg" alt="Amish Kumar" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Amish Kumar</h1>
+        <p class="section__text__p2">Software Engineer | Innovator</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('resume.pdf')">
+            Download Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img src="images/linkedin.png" alt="LinkedIn" class="icon" onclick="location.href='https://www.linkedin.com/in/amishkumarofficial'" />
+          <img src="images/github.png" alt="GitHub" class="icon" onclick="location.href='https://github.com/Zero-Day-Smile'" />
+        </div>
+      </div>
+    </section>
+    
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="text-container">
+        <p>I am an aspiring software engineer with a passion for innovation and technology. I specialize in full-stack development, problem-solving, and building efficient solutions for real-world problems.</p>
+      </div>
+    </section>
+    
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="images/project1.jpg" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">OptiTask - Task & Budget Management</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Zero-Day-Smile/OptiTask'">GitHub</button>
+              <button class="btn btn-color-2 project-btn">Live Demo</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="images/email.png" alt="Email" class="icon contact-icon" />
+          <p><a href="mailto:000amishkumar@gmail.com">000amishkumar@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="images/linkedin.png" alt="LinkedIn" class="icon contact-icon" />
+          <p><a href="https://www.linkedin.com/in/amishkumarofficial">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    
+    <footer>
+      <p>Copyright &#169; 2024 Amish Kumar. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+  </body>
 </html>
